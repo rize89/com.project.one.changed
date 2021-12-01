@@ -43,6 +43,7 @@ public class Main {
         employeeList.add(emp1);
         employeeList.add(emp2);
         employeeList.add(emp3);
+        employeeList.add(emp4);
         System.out.println(employeeList); //вывод всех сотрудников с указанием их кабинетов
 
         Office office = new Office();
