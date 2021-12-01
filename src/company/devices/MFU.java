@@ -1,10 +1,20 @@
-package office.cabinets.devices;
+package company.devices;
 
-import office.cabinets.devices.interfaces.Copy;
-import office.cabinets.devices.interfaces.Print;
-import office.cabinets.devices.interfaces.Scan;
+import company.devices.interfaces.Condition;
+import company.devices.interfaces.Copy;
+import company.devices.interfaces.Print;
+import company.devices.interfaces.Scan;
 
-public class MFU extends Devices implements Print, Scan, Copy {
+public class MFU extends Device implements Print, Scan, Copy, Condition {
+
+    public MFU(int id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public void condition() {
+        System.out.println("MFU: включен");
+    }
 
     @Override
     public void copy() {

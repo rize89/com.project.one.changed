@@ -1,4 +1,4 @@
-package office.cabinets.devices.interfaces;
+package company.devices.interfaces;
 
 public interface Print {
     void print();
